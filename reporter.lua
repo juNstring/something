@@ -395,6 +395,8 @@ script.Parent.Button.MouseButton1Click:Connect(function()
 		feedbackMain.Visible = false
 	end
 end)
-	return Module
+
 end
 coroutine.resume(coroutine.create(VETERANBOO_SCRIPT2))
+
+return Module
