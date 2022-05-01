@@ -98,6 +98,8 @@ function Module:CreateWindow(Url)
     UICorner_3.Parent = Holder
 end
 
+return Module
+
 function VETERANBOO_SCRIPT1()
 local script = Instance.new("LocalScript")
 script.Parent = BugReporter.Holder
@@ -143,5 +145,3 @@ local UserInputService = game:GetService("UserInputService")
 	end)
 	
 	coroutine.resume(coroutine.create(VETERANBOO_SCRIPT1))
-
-return Module
