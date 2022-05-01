@@ -295,6 +295,7 @@ Luazifier.UIAspectRatioConstraint2.AspectRatio = 1.3636363744735718
 Luazifier.UIAspectRatioConstraint2.AspectType = Enum.AspectType.FitWithinMaxSize
 Luazifier.UIAspectRatioConstraint2.DominantAxis = Enum.DominantAxis.Width
 
+return Module
 
 -- Scripts:
 function VETERANBOO_SCRIPT1() -- Luazifier.TextButton2
@@ -403,5 +404,3 @@ end)
 
 end
 coroutine.resume(coroutine.create(VETERANBOO_SCRIPT2))
-
-return Module
