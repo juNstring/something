@@ -45,7 +45,6 @@ function Module:CreateWindow(Url)
     Holder.Position = UDim2.new(0.289454013, 0, 0.301840484, 0)
     Holder.Size = UDim2.new(0, 483, 0, 291)
 
-    Report.Name = 'Report'
     Report.Parent = Holder
     Report.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
     Report.BorderColor3 = Color3.fromRGB(39, 39, 115)
@@ -99,6 +98,11 @@ function Module:CreateWindow(Url)
     UICorner_3.Parent = Holder
 end
 
+function VETERANBOO_SCRIPT1()
+local script = Instance.new("LocalScript")
+script.Parent = BugReporter.Holder
+script.Disabled = false
+
 local Drag = script.Parent.Parent.Frame
 gsCoreGui = game:GetService("CoreGui")
 gsTween = game:GetService("TweenService")
@@ -137,5 +141,7 @@ local UserInputService = game:GetService("UserInputService")
 			update(input)
 		end
 	end)
+	
+	coroutine.resume(coroutine.create(VETERANBOO_SCRIPT1))
 
 return Module
