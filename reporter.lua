@@ -100,11 +100,6 @@ end
 
 return Module
 
-function VETERANBOO_SCRIPT1()
-local script = Instance.new("LocalScript")
-script.Parent = BugReporter.Holder
-script.Disabled = false
-
 local Drag = script.Parent.Parent.Frame
 gsCoreGui = game:GetService("CoreGui")
 gsTween = game:GetService("TweenService")
@@ -143,5 +138,3 @@ local UserInputService = game:GetService("UserInputService")
 			update(input)
 		end
 	end)
-	
-	coroutine.resume(coroutine.create(VETERANBOO_SCRIPT1))
